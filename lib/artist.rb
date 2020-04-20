@@ -23,8 +23,8 @@ def save
   @@all << self
 end
 
-def artist_name=(name)
-    name = self.artist
+def self.find_or_create_by_name
+  
 end
 
 end
