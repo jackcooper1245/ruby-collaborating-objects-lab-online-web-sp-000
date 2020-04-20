@@ -42,7 +42,7 @@ def self.find(name)
   end
 
 def print_songs
-  puts @songs
+  puts @songs.collect {|name| name.name}
 end
 
 end
