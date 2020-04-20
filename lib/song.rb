@@ -18,9 +18,9 @@ def self.new_by_filename(file)
 end
 
 def artist_name=(name)
-  song = Artist.find_or_create_by_name(name)
+  name = Artist.find_or_create_by_name(name)
   Artist.name = self
-  add_song(song)
+  self.add_song(song)
 end
 
 def self.all
