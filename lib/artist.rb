@@ -24,9 +24,11 @@ def save
 end
 
 def self.find_or_create_by_name(name)
-        @@all.include? {|name| name == name}
+      if  @@all.include? {|name| name == name}
+        return name
     else name = Artist.new
   end
+  name
 end
 
 
