@@ -36,8 +36,11 @@ def self.create(name)
 end
 
 def self.find(name)
-  self.all.detect{|artist| artist == name}
-end
+    @@all.find do |artist|
+      artist.name == name
+    end
+  end
+
 
 
 end
