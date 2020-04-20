@@ -16,8 +16,9 @@ def self.all
 end
 
 def add_song(song)
-  song.artist = self
-end
+      song.artist = self
+      @@song_count += 1
+    end
 
 def save
   @@all << self
