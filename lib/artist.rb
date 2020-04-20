@@ -15,7 +15,7 @@ def self.all
 end
 
 def add_song(song)
-  song = self
+  song.artist = self
 end
 
 def save
