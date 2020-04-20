@@ -8,7 +8,7 @@ attr_accessor :name
 def initialize(name)
   @name = name
   @songs = []
-  @@all << self
+  save
 end
 
 def self.all
