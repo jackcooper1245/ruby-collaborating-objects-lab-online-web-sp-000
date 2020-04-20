@@ -25,7 +25,7 @@ end
 
 def self.find_or_create_by_name(name)
 if  @@all.include? {|name| name == name}
-else name = artist.new
+else name = Artist.new
 
 
 end
