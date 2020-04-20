@@ -29,7 +29,6 @@ def artist_name=(name)
     else
       self.artist.name = name
     end
-  end
 end
 
 end
