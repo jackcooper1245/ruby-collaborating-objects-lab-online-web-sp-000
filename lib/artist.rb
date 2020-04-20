@@ -27,15 +27,6 @@ def self.find_or_create_by_name(name)
     self.all.detect {|artist| artist.name == name} || Artist.new(name).save
   end
 
-def self.create(name)
-  artist = self.new(name)
-  @@all << artist
-  artist
-end
-
-def self.find(name)
-    @@all.find {|artist|artist.name == name}
-  end
 
 def print_songs
   puts @songs.collect {|name| name.name}
