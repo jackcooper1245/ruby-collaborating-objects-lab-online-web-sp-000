@@ -34,7 +34,7 @@ end
 
 def self.create(name)
   artist = self.new(name)
-  save
+  @@all << artist
   artist
 end
 
