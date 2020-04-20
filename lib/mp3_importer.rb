@@ -4,7 +4,7 @@ attr_accessor :path, :files
 
 def initialize(path)
   @path = path
-  @files = dir /s *.mp3 >listmp3.txt
+  @files = Dir.entries(path).grep(/.*\.mp3/)
 end
 
 end
