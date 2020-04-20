@@ -24,11 +24,7 @@ def save
 end
 
 def artist_name=(name)
-    if (self.artist.nil?)
-      self.artist = Artist.new(name)
-    else
-      self.artist.name = name
-    end
+    name = self.artist
 end
 
 end
