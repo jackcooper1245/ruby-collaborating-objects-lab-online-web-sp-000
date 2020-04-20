@@ -32,13 +32,13 @@ def self.find_or_create_by_name(name)
 end
 
 def self.create(name)
-  name = Artist.new
+  artist = self.new(name)
+  save
+  artist
 end
 
 def self.find(name)
-    @@all.find do |artist|
-      artist.name == name
-    end
+    @@all.find {|artist|artist.name == name}
   end
 
 
